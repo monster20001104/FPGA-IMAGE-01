@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Sep  8 15:48:40 2025
+# Process ID: 30184
+# Current directory: C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17712 C:\Users\Hello\Desktop\FPGA\DL-UDH-K7\UDH\UDH.xpr
+# Log file: C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/vivado.log
+# Journal file: C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  8 15:49:21 2025...

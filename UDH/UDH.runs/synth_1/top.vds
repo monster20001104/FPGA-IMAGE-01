@@ -1,0 +1,1284 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jun 20 19:09:05 2025
+# Process ID: 78120
+# Current directory: C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.runs/synth_1/top.vds
+# Journal file: C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7k325tffg900-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 73276 
+WARNING: [Synth 8-2611] redeclaration of ansi port wfifo_wr_rst is not allowed [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/ddr3/ddr3_rw.v:52]
+WARNING: [Synth 8-2611] redeclaration of ansi port rfifo_rd_rst is not allowed [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/ddr3/ddr3_rw.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port video_vs is not allowed [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/dvi_top.v:21]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 509.719 ; gain = 104.332
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/top.v:1]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+	Parameter BOARD_PORT bound to: 16'b0000010011010010 
+	Parameter DES_PORT bound to: 16'b0001011000101110 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.runs/synth_1/.Xil/Vivado-78120-DESKTOP-DC35DBT/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.runs/synth_1/.Xil/Vivado-78120-DESKTOP-DC35DBT/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_to_gmii' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/rgmii_to_gmii.v:1]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'rgmii_rx' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/rgmii_rx.v:1]
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IDELAYE2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22477]
+	Parameter CINVCTRL_SEL bound to: FALSE - type: string 
+	Parameter DELAY_SRC bound to: IDATAIN - type: string 
+	Parameter HIGH_PERFORMANCE_MODE bound to: FALSE - type: string 
+	Parameter IDELAY_TYPE bound to: FIXED - type: string 
+	Parameter IDELAY_VALUE bound to: 0 - type: integer 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_DATAIN_INVERTED bound to: 1'b0 
+	Parameter IS_IDATAIN_INVERTED bound to: 1'b0 
+	Parameter PIPE_SEL bound to: FALSE - type: string 
+	Parameter REFCLK_FREQUENCY bound to: 200.000000 - type: float 
+	Parameter SIGNAL_PATTERN bound to: DATA - type: string 
+	Parameter SIM_DELAY_D bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYE2' (2#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22477]
+INFO: [Synth 8-6157] synthesizing module 'IDDR' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22342]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDDR' (3#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22342]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (4#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'BUFIO' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:838]
+INFO: [Synth 8-6155] done synthesizing module 'BUFIO' (5#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:838]
+INFO: [Synth 8-6157] synthesizing module 'IDELAYCTRL' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22464]
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IDELAYCTRL' (6#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:22464]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_rx' (7#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/rgmii_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rgmii_tx' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/rgmii_tx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:31641]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (8#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:31641]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_tx' (9#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/rgmii_tx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'rgmii_to_gmii' (10#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/rgmii_to_gmii.v:1]
+INFO: [Synth 8-6157] synthesizing module 'eth' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth.v:1]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+	Parameter BOARD_PORT bound to: 16'b0000010011010010 
+	Parameter DES_PORT bound to: 16'b0001011000101110 
+	Parameter IP_TYPE bound to: 16'b0000100000000000 
+	Parameter ARP_TYPE bound to: 16'b0000100000000110 
+INFO: [Synth 8-6157] synthesizing module 'eth_ctrl' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth_ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'eth_ctrl' (11#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth_ctrl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'eth_rx' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth_rx.v:2]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter BOARD_PORT bound to: 16'b0000010011010010 
+	Parameter IDLE bound to: 8'b00000001 
+	Parameter ETH_HEAD bound to: 8'b00000010 
+	Parameter IP_HEAD bound to: 8'b00000100 
+	Parameter IUDP_HEAD bound to: 8'b00001000 
+	Parameter IUDP_DATA bound to: 8'b00010000 
+	Parameter ARP_DATA bound to: 8'b00100000 
+	Parameter CRC bound to: 8'b01000000 
+	Parameter RX_END bound to: 8'b10000000 
+	Parameter IP_TPYE bound to: 16'b0000100000000000 
+	Parameter ARP_TPYE bound to: 16'b0000100000000110 
+	Parameter ICMP_TYPE bound to: 8'b00000001 
+	Parameter UDP_TYPE bound to: 8'b00010001 
+INFO: [Synth 8-4471] merging register 'gmii_rxd_r_reg[1][7:0]' into 'crc_data_reg[7:0]' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth_rx.v:164]
+WARNING: [Synth 8-6014] Unused sequential element gmii_rxd_r_reg[1] was removed.  [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth_rx.v:164]
+INFO: [Synth 8-6155] done synthesizing module 'eth_rx' (12#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth_rx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'crc32_d8' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/crc32_d8.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'crc32_d8' (13#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/crc32_d8.v:1]
+INFO: [Synth 8-6157] synthesizing module 'eth_tx' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth.tx.v:3]
+	Parameter BOARD_MAC bound to: 48'b000000000001000100100010001100110100010001010101 
+	Parameter BOARD_IP bound to: -1062731510 - type: integer 
+	Parameter DES_MAC bound to: 48'b111111111111111111111111111111111111111111111111 
+	Parameter DES_IP bound to: -1062731418 - type: integer 
+	Parameter BOARD_PORT bound to: 16'b0000010011010010 
+	Parameter DES_PORT bound to: 16'b0001011000101110 
+	Parameter IP_TYPE bound to: 16'b0000100000000000 
+	Parameter ARP_TYPE bound to: 16'b0000100000000110 
+	Parameter IDLE bound to: 9'b000000001 
+	Parameter PREAMBLE bound to: 9'b000000010 
+	Parameter ETH_HEAD bound to: 9'b000000100 
+	Parameter IP_HEAD bound to: 9'b000001000 
+	Parameter IUDP_HEAD bound to: 9'b000010000 
+	Parameter IUDP_DATA bound to: 9'b000100000 
+	Parameter ARP_DATA bound to: 9'b001000000 
+	Parameter CRC bound to: 9'b010000000 
+	Parameter IFG bound to: 9'b100000000 
+	Parameter MIN_DATA_NUM bound to: 16'b0000000000010010 
+INFO: [Synth 8-6155] done synthesizing module 'eth_tx' (14#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth.tx.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fifo_generator_0' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.runs/synth_1/.Xil/Vivado-78120-DESKTOP-DC35DBT/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_generator_0' (15#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.runs/synth_1/.Xil/Vivado-78120-DESKTOP-DC35DBT/realtime/fifo_generator_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'eth' (16#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth.v:1]
+INFO: [Synth 8-6157] synthesizing module 'udp_data' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/udp_data.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'udp_data' (17#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/udp_data.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ddr3_top' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/ddr3/ddr3_top.v:1]
+	Parameter PINGPANG_EN bound to: 1'b0 
+	Parameter USE_ADDR_W bound to: 29 - type: integer 
+	Parameter USE_BUST_LEN_W bound to: 8 - type: integer 
+	Parameter USE_DATA_W bound to: 16 - type: integer 
+	Parameter DDR_ADDR_W bound to: 29 - type: integer 
+	Parameter DDR_DATA_W bound to: 128 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'wrfifo' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.runs/synth_1/.Xil/Vivado-78120-DESKTOP-DC35DBT/realtime/wrfifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'wrfifo' (18#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.runs/synth_1/.Xil/Vivado-78120-DESKTOP-DC35DBT/realtime/wrfifo_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rdfifo' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.runs/synth_1/.Xil/Vivado-78120-DESKTOP-DC35DBT/realtime/rdfifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rdfifo' (19#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.runs/synth_1/.Xil/Vivado-78120-DESKTOP-DC35DBT/realtime/rdfifo_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ddr3_rw' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/ddr3/ddr3_rw.v:1]
+	Parameter PINGPANG_EN bound to: 1'b0 
+	Parameter USE_ADDR_W bound to: 29 - type: integer 
+	Parameter USE_BUST_LEN_W bound to: 8 - type: integer 
+	Parameter USE_DATA_W bound to: 16 - type: integer 
+	Parameter DDR_ADDR_W bound to: 29 - type: integer 
+	Parameter DDR_DATA_W bound to: 128 - type: integer 
+	Parameter IDLE bound to: 4'b0001 
+	Parameter DONE bound to: 4'b0010 
+	Parameter WRITE bound to: 4'b0100 
+	Parameter READ bound to: 4'b1000 
+INFO: [Synth 8-6155] done synthesizing module 'ddr3_rw' (20#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/ddr3/ddr3_rw.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mig_7series_0' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.runs/synth_1/.Xil/Vivado-78120-DESKTOP-DC35DBT/realtime/mig_7series_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mig_7series_0' (21#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.runs/synth_1/.Xil/Vivado-78120-DESKTOP-DC35DBT/realtime/mig_7series_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'u_mig_7series_0' of module 'mig_7series_0' requires 39 connections, but only 38 given [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/ddr3/ddr3_top.v:165]
+INFO: [Synth 8-6155] done synthesizing module 'ddr3_top' (22#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/ddr3/ddr3_top.v:1]
+WARNING: [Synth 8-689] width (11) of port connection 'rfifo_rcount' does not match port width (12) of module 'ddr3_top' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/top.v:193]
+INFO: [Synth 8-6157] synthesizing module 'dvi_top' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/dvi_top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'video_driver' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:2]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+	Parameter H_SYNC bound to: 12'b000010001000 
+	Parameter H_BACK bound to: 12'b000010100000 
+	Parameter H_DISP bound to: 12'b010000000000 
+	Parameter H_FRONT bound to: 12'b000000011000 
+	Parameter V_SYNC bound to: 12'b000000000110 
+	Parameter V_BACK bound to: 12'b000000011101 
+	Parameter V_DISP bound to: 12'b001100000000 
+	Parameter V_FRONT bound to: 12'b000000000011 
+	Parameter SHOW_H_B bound to: 12'b000100101000 
+	Parameter SHOW_V_B bound to: 12'b000000100011 
+	Parameter SHOW_H_E bound to: 12'b010100101000 
+	Parameter SHOW_V_E bound to: 12'b001100100011 
+	Parameter H_TOTAL bound to: 12'b010101000000 
+	Parameter V_TOTAL bound to: 12'b001100100110 
+	Parameter H_TOTAL_W bound to: 11 - type: integer 
+	Parameter V_TOTAL_W bound to: 10 - type: integer 
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+WARNING: [Synth 8-6104] Input port 'depth' has an internal driver [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'video_driver' (23#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v:2]
+INFO: [Synth 8-6157] synthesizing module 'dvi_transmitter' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/dvi_transmitter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'serializer_10_to_1' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/serializer_10_to_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (24#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:32215]
+INFO: [Synth 8-6155] done synthesizing module 'serializer_10_to_1' (25#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/serializer_10_to_1.v:1]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28244]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (26#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:28244]
+INFO: [Synth 8-6157] synthesizing module 'dvi_tmds_encoder' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/dvi_tmds_encoder.v:1]
+	Parameter CTRLTOKEN0 bound to: 10'b1101010100 
+	Parameter CTRLTOKEN1 bound to: 10'b0010101011 
+	Parameter CTRLTOKEN2 bound to: 10'b0101010100 
+	Parameter CTRLTOKEN3 bound to: 10'b1010101011 
+INFO: [Synth 8-6155] done synthesizing module 'dvi_tmds_encoder' (27#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/dvi_tmds_encoder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dvi_transmitter' (28#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/dvi_transmitter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'dvi_top' (29#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/dvi_top.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (30#1) [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/top.v:1]
+WARNING: [Synth 8-3331] design video_driver has unconnected port rfifo_rrst_busy
+WARNING: [Synth 8-3331] design ddr3_rw has unconnected port wfifo_empty
+WARNING: [Synth 8-3331] design ddr3_rw has unconnected port rfifo_full
+WARNING: [Synth 8-3331] design ddr3_rw has unconnected port app_addr_wr_min[28]
+WARNING: [Synth 8-3331] design ddr3_rw has unconnected port app_addr_wr_min[27]
+WARNING: [Synth 8-3331] design ddr3_rw has unconnected port app_addr_wr_min[26]
+WARNING: [Synth 8-3331] design ddr3_rw has unconnected port app_addr_rd_min[28]
+WARNING: [Synth 8-3331] design ddr3_rw has unconnected port app_addr_rd_min[27]
+WARNING: [Synth 8-3331] design ddr3_rw has unconnected port app_addr_rd_min[26]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 564.195 ; gain = 158.809
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 564.195 ; gain = 158.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 564.195 ; gain = 158.809
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz_0'
+Finished Parsing XDC File [c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk_wiz_0'
+Parsing XDC File [c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'u_eth/u_icmp_fifo'
+Finished Parsing XDC File [c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0/fifo_generator_0_in_context.xdc] for cell 'u_eth/u_icmp_fifo'
+Parsing XDC File [c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/rdfifo/rdfifo/rdfifo_in_context.xdc] for cell 'u_ddr3_top/u_rdfifo'
+Finished Parsing XDC File [c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/rdfifo/rdfifo/rdfifo_in_context.xdc] for cell 'u_ddr3_top/u_rdfifo'
+Parsing XDC File [c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/wrfifo/wrfifo/wrfifo_in_context.xdc] for cell 'u_ddr3_top/u_wrfifo'
+Finished Parsing XDC File [c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/wrfifo/wrfifo/wrfifo_in_context.xdc] for cell 'u_ddr3_top/u_wrfifo'
+Parsing XDC File [c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc] for cell 'u_ddr3_top/u_mig_7series_0'
+Finished Parsing XDC File [c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc] for cell 'u_ddr3_top/u_mig_7series_0'
+Parsing XDC File [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/udp-hdmi-constr.xdc]
+WARNING: [Vivado 12-508] No pins matched 'u_ddr3_top/u_mig_7series_0/u_mig_7series_0_mig/u_ddr3_infrastructure/gen_mmcm.mmcm_i/CLKFBOUT'. [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/udp-hdmi-constr.xdc:44]
+WARNING: [Vivado 12-508] No pins matched 'u_clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1'. [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/udp-hdmi-constr.xdc:45]
+Finished Parsing XDC File [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/udp-hdmi-constr.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/udp-hdmi-constr.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/udp-hdmi-constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 973.312 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 973.312 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  OBUFDS => OBUFDS: 4 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 973.312 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 973.312 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_ddr3_top/u_wrfifo' at clock pin 'wr_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_eth/u_icmp_fifo' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 973.312 ; gain = 567.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 973.312 ; gain = 567.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[0]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[10]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[11]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[12]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[13]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[14]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[14]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[1]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[2]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[3]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[4]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[5]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[6]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[7]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[8]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_addr[9]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[0]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[1]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ba[2]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cas_n. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_n. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_n. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ck_p. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ck_p. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cke. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cke. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_cs_n. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_cs_n. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[0]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dm[1]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[0]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[10]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[11]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[12]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[13]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[14]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[15]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[1]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[2]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[3]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[4]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[5]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[6]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[7]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[8]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dq[9]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[0]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_n[1]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[0]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_dqs_p[1]. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_odt. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_odt. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_ras_n. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_reset_n. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr3_we_n. (constraint file  c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/mig_7series_0_in_context.xdc, line 99).
+Applied set_property DONT_TOUCH = true for u_clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_eth/u_icmp_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ddr3_top/u_rdfifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ddr3_top/u_wrfifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ddr3_top/u_mig_7series_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 973.312 ; gain = 567.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'icmp_tx_code_reg[7:0]' into 'icmp_tx_type_reg[7:0]' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth_ctrl.v:105]
+INFO: [Synth 8-5544] ROM "udp_tx_req" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth_rx.v:372]
+INFO: [Synth 8-802] inferred FSM for state register 'state_c_reg' in module 'eth_rx'
+INFO: [Synth 8-5546] ROM "error_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_rx_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_rx_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_head_byte_num" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_total_length" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "des_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "des_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iudp_data_length" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "opcode" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "src_mac_t" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "src_ip_t" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_rx_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_rx_code" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_rx_id" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "icmp_rx_seq" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "src_mac" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "arp_rx_type0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "start" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iudp_rx_data0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reply_checksum_add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'arp_data_reg[1][7:0]' into 'arp_data_reg[16][7:0]' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth.tx.v:81]
+INFO: [Synth 8-4471] merging register 'arp_data_reg[6][7:0]' into 'arp_data_reg[8][7:0]' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth.tx.v:81]
+INFO: [Synth 8-4471] merging register 'arp_data_reg[3][7:0]' into 'arp_data_reg[8][7:0]' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth.tx.v:81]
+INFO: [Synth 8-4471] merging register 'arp_data_reg[0][7:0]' into 'arp_data_reg[8][7:0]' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth.tx.v:81]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth.tx.v:157]
+INFO: [Synth 8-5546] ROM "ip_head" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_head" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "iudp_head" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "icmp_check" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ip_head_check" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gmii_tx_en_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gmii_tx_en_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ip_head" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_head" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "iudp_head" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "icmp_check" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ip_head_check" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gmii_tx_en_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gmii_tx_en_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "arp_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crc_data0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crc_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/ddr3/ddr3_rw.v:155]
+INFO: [Synth 8-802] inferred FSM for state register 'state_c_reg' in module 'ddr3_rw'
+INFO: [Synth 8-5544] ROM "app_cmd" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_n" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "cnt_v" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/dvi_tmds_encoder.v:93]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                         00000001 |                         00000001
+                ETH_HEAD |                         00000010 |                         00000010
+                ARP_DATA |                         00100000 |                         00100000
+                 IP_HEAD |                         00000100 |                         00000100
+               IUDP_HEAD |                         00001000 |                         00001000
+               IUDP_DATA |                         00010000 |                         00010000
+                     CRC |                         01000000 |                         01000000
+                  RX_END |                         10000000 |                         10000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_c_reg' in module 'eth_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                             0001 |                             0001
+                    DONE |                             0010 |                             0010
+                   WRITE |                             0100 |                             0100
+                    READ |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_c_reg' in module 'ddr3_rw'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 973.312 ; gain = 567.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 16    
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 3     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   5 Input      6 Bit       Adders := 6     
+	   4 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 7     
+	   8 Input      4 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 37    
+	   3 Input      1 Bit         XORs := 12    
+	   5 Input      1 Bit         XORs := 8     
+	   7 Input      1 Bit         XORs := 14    
+	   6 Input      1 Bit         XORs := 14    
+	   4 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 6     
+	  10 Input      1 Bit         XORs := 4     
+	  12 Input      1 Bit         XORs := 2     
+	   8 Input      1 Bit         XORs := 2     
++---Registers : 
+	               48 Bit    Registers := 4     
+	               32 Bit    Registers := 15    
+	               26 Bit    Registers := 2     
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 18    
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 34    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 9     
+	                2 Bit    Registers := 15    
+	                1 Bit    Registers := 33    
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 12    
+	   5 Input     32 Bit        Muxes := 2     
+	  12 Input     32 Bit        Muxes := 1     
+	   5 Input     31 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 7     
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 7     
+	   7 Input     16 Bit        Muxes := 1     
+	   9 Input     16 Bit        Muxes := 1     
+	  13 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	  12 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 6     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 23    
+	   9 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 10    
+	   3 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 12    
+	   3 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 8     
+	   3 Input      4 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 7     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 119   
+	   5 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module eth_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 11    
+Module eth_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 3     
+	               32 Bit    Registers := 3     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 7     
+	                8 Bit    Registers := 10    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 29    
+	   5 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 5     
+Module crc32_d8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 6     
+	   5 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 7     
+	   6 Input      1 Bit         XORs := 7     
+	   4 Input      1 Bit         XORs := 1     
+	   9 Input      1 Bit         XORs := 3     
+	  10 Input      1 Bit         XORs := 2     
+	  12 Input      1 Bit         XORs := 1     
+	   8 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module eth_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 11    
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 5     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 10    
+	               16 Bit    Registers := 6     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 15    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 12    
+	   5 Input     32 Bit        Muxes := 2     
+	  12 Input     32 Bit        Muxes := 1     
+	   5 Input     31 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 5     
+	   9 Input     16 Bit        Muxes := 1     
+	  13 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	  12 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 13    
+	   4 Input      8 Bit        Muxes := 10    
+	   3 Input      8 Bit        Muxes := 2     
+	   5 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+	   3 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 3     
+Module udp_data 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+Module ddr3_rw 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     26 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               26 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 7     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+Module video_driver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module dvi_tmds_encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input      6 Bit       Adders := 2     
+	   4 Input      6 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 7     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
++---Muxes : 
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'cnt_reg[15:0]' into 'cnt_reg[15:0]' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth.tx.v:311]
+INFO: [Synth 8-4471] merging register 'cnt_reg[15:0]' into 'cnt_reg[15:0]' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth.tx.v:311]
+INFO: [Synth 8-4471] merging register 'cnt_reg[15:0]' into 'cnt_reg[15:0]' [C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth.tx.v:311]
+INFO: [Synth 8-5544] ROM "ip_head" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ip_head_check" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "iudp_head" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "crc_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gmii_tx_en_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_eth_rx/ip_head_byte_num" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_eth_rx/iudp_data_length" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_eth_rx/ip_total_length" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "u_eth_rx/" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "u_eth_rx/" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_eth_rx/des_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_eth_rx/opcode" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "u_eth_rx/state_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "u_eth_rx/src_mac_t" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_eth_rx/src_ip_t" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_eth_rx/error_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_eth_rx/eth_rx_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_video_driver/cnt_v" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design dvi_top has unconnected port rfifo_rrst_busy
+WARNING: [Synth 8-3331] design ddr3_top has unconnected port app_addr_wr_min[28]
+WARNING: [Synth 8-3331] design ddr3_top has unconnected port app_addr_wr_min[27]
+WARNING: [Synth 8-3331] design ddr3_top has unconnected port app_addr_wr_min[26]
+WARNING: [Synth 8-3331] design ddr3_top has unconnected port app_addr_rd_min[28]
+WARNING: [Synth 8-3331] design ddr3_top has unconnected port app_addr_rd_min[27]
+WARNING: [Synth 8-3331] design ddr3_top has unconnected port app_addr_rd_min[26]
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_rx/ip_head_byte_num_reg[0]' (FDRE) to 'u_eth/u_eth_rx/ip_head_byte_num_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_rx/ip_head_byte_num_reg[1] )
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_video_driver/video_rgb_reg[1]' (FDR) to 'u_dvi_top/u_video_driver/video_rgb_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_video_driver/video_rgb_reg[2]' (FDR) to 'u_dvi_top/u_video_driver/video_rgb_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_video_driver/video_rgb_reg[0]' (FDR) to 'u_dvi_top/u_video_driver/video_rgb_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/c1_r_reg[0]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/c1_r_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_video_driver/video_rgb_reg[9]' (FDR) to 'u_dvi_top/u_video_driver/video_rgb_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_video_driver/video_rgb_reg[8]' (FDR) to 'u_dvi_top/u_video_driver/video_rgb_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/c1_r_reg[0]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/c0_r_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_video_driver/video_rgb_reg[17]' (FDR) to 'u_dvi_top/u_video_driver/video_rgb_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_video_driver/video_rgb_reg[18]' (FDR) to 'u_dvi_top/u_video_driver/video_rgb_reg[16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_dvi_top/\u_video_driver/video_rgb_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_ctrl/arp_req_r_reg )
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_b/din_r_reg[2]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/din_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_b/din_r_reg[1]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/din_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_b/din_r_reg[0]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/din_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_b/de_r_reg[0]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/de_r_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/c1_r_reg[1]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/c1_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/din_r_reg[1]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/din_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/din_r_reg[0]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/din_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/c0_r_reg[0]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/din_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/de_r_reg[0]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/de_r_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/c1_r_reg[1]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/c0_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/din_r_reg[2]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/din_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/din_r_reg[1]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/din_r_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/din_r_reg[0]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/c0_r_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_dvi_top/\u_dvi_transmitter/u_dvi_tmds_r/c0_r_reg[0] )
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_ctrl/icmp_tx_type_reg[7]' (FDRE) to 'u_eth/u_eth_ctrl/icmp_tx_type_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_ctrl/icmp_tx_type_reg[6]' (FDRE) to 'u_eth/u_eth_ctrl/icmp_tx_type_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_ctrl/icmp_tx_type_reg[5]' (FDRE) to 'u_eth/u_eth_ctrl/icmp_tx_type_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_ctrl/icmp_tx_type_reg[4]' (FDRE) to 'u_eth/u_eth_ctrl/icmp_tx_type_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_ctrl/icmp_tx_type_reg[3]' (FDRE) to 'u_eth/u_eth_ctrl/icmp_tx_type_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_ctrl/icmp_tx_type_reg[2]' (FDRE) to 'u_eth/u_eth_ctrl/icmp_tx_type_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_ctrl/icmp_tx_type_reg[1]' (FDRE) to 'u_eth/u_eth_ctrl/icmp_tx_type_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_ctrl/icmp_tx_type_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_ctrl/udp_tx_flag_reg )
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_b/q_m_r_reg[0]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/q_m_r_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_b/n0q_m_reg[0]' (FDR) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_b/n1q_m_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_b/de_r_reg[1]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/de_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/q_m_r_reg[0]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/c0_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/n0q_m_reg[0]' (FDR) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/n1q_m_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/c0_r_reg[1]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/q_m_r_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/de_r_reg[1]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/de_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/q_m_r_reg[0]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/c0_r_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/n0q_m_reg[0]' (FDR) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/n1q_m_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/c0_r_reg[1]' (FD) to 'u_dvi_top/u_dvi_transmitter/u_dvi_tmds_r/c0_r_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[17][4]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[17][0]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[15][4]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[15][0]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[14][4]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[14][0]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[13][4]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[13][6]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[12][4]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[12][0]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[11][4]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[11][0]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[10][4]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[10][0]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[9][4]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[9][0]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[5][4]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[4][4]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[2][4]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[16][4]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[16][5]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[8][4]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[8][0]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[17][0]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[17][5]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[15][0]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[15][1]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[14][0]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[14][5]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[13][0]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[13][6]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[12][0]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[12][5]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[11][0]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[11][1]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[10][0]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[10][6]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[5][0]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[5][5]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[4][0]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[4][5]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[2][0]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[2][5]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[8][0]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[17][5]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[17][6]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[15][5]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[15][7]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[14][5]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[14][1]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[13][5]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[13][1]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[12][5]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[12][1]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[11][5]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[11][1]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[10][5]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[10][1]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[9][5]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[9][1]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[5][5]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[5][1]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[4][5]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[4][6]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[2][5]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[2][1]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[16][5]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[16][1]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[8][5]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[17][1]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[15][1]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[15][6]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[14][1]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[14][2]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[13][1]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[13][7]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[12][1]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[12][7]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[9][1]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[9][6]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[5][1]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[5][6]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[4][1]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[4][2]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[2][1]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[2][6]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[16][1]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[16][6]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[8][1]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[8][2]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[17][6]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[15][6]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[15][2]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[14][6]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[14][7]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[13][6]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[13][2]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[12][6]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[12][2]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[11][6]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[11][2]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[10][6]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[10][2]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[9][6]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[9][2]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[5][6]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[5][7]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[4][6]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[4][7]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[2][6]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[2][2]'
+INFO: [Synth 8-3886] merging instance 'u_eth/u_eth_tx/arp_data_reg[16][6]' (FDRE) to 'u_eth/u_eth_tx/arp_data_reg[16][2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/arp_data_reg[15][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/arp_data_reg[17][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/arp_data_reg[2][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/arp_data_reg[14][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/arp_data_reg[13][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/arp_data_reg[12][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/arp_data_reg[11][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/arp_data_reg[10][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/arp_data_reg[9][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/arp_data_reg[5][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/arp_data_reg[4][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/arp_data_reg[16][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/arp_data_reg[8][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/ip_head_reg[2][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/ip_head_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/ip_head_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_ddr3_top/\u_ddr3_rw/bust_cnt_num_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (u_ddr3_top/\u_ddr3_rw/bust_cnt_num_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_dvi_top/\u_dvi_transmitter/u_dvi_tmds_r/c0_r_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_eth/\u_eth_tx/iudp_head_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_dvi_top/\u_dvi_transmitter/u_dvi_tmds_r/n1q_m_reg[3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 973.312 ; gain = 567.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_wiz_0/clk_out1' to pin 'u_clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_wiz_0/clk_out2' to pin 'u_clk_wiz_0/bbstub_clk_out2/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk_wiz_0/clk_out3' to pin 'u_clk_wiz_0/bbstub_clk_out3/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_ddr3_top/u_mig_7series_0/ui_clk' to pin 'u_ddr3_top/u_mig_7series_0/bbstub_ui_clk/O'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 973.312 ; gain = 567.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 973.312 ; gain = 567.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_dvi_top/u_dvi_transmitter/u_dvi_tmds_g/n1d_reg[3] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 994.848 ; gain = 589.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 994.848 ; gain = 589.461
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 994.848 ; gain = 589.461
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 994.848 ; gain = 589.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 994.848 ; gain = 589.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 994.848 ; gain = 589.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 994.848 ; gain = 589.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------+----------+
+|      |BlackBox name    |Instances |
++------+-----------------+----------+
+|1     |clk_wiz_0        |         1|
+|2     |wrfifo           |         1|
+|3     |rdfifo           |         1|
+|4     |mig_7series_0    |         1|
+|5     |fifo_generator_0 |         1|
++------+-----------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |clk_wiz_0        |     1|
+|2     |fifo_generator_0 |     1|
+|3     |mig_7series_0    |     1|
+|4     |rdfifo           |     1|
+|5     |wrfifo           |     1|
+|6     |BUFG             |     1|
+|7     |BUFIO            |     1|
+|8     |CARRY4           |   189|
+|9     |IDDR             |     5|
+|10    |IDELAYCTRL       |     1|
+|11    |IDELAYE2         |     5|
+|12    |LUT1             |   119|
+|13    |LUT2             |   339|
+|14    |LUT3             |   159|
+|15    |LUT4             |   242|
+|16    |LUT5             |   210|
+|17    |LUT6             |   583|
+|18    |MUXF7            |     6|
+|19    |ODDR             |     5|
+|20    |OSERDESE2        |     4|
+|21    |OSERDESE2_1      |     4|
+|22    |FDCE             |     3|
+|23    |FDPE             |     1|
+|24    |FDRE             |  1148|
+|25    |FDSE             |   163|
+|26    |IBUF             |     8|
+|27    |OBUF             |     6|
+|28    |OBUFDS           |     4|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+----------------------------+---------------------+------+
+|      |Instance                    |Module               |Cells |
++------+----------------------------+---------------------+------+
+|1     |top                         |                     |  3593|
+|2     |  u_ddr3_top                |ddr3_top             |   594|
+|3     |    u_ddr3_rw               |ddr3_rw              |   221|
+|4     |  u_dvi_top                 |dvi_top              |   427|
+|5     |    u_dvi_transmitter       |dvi_transmitter      |   328|
+|6     |      \SER[0].u_serializer  |serializer_10_to_1   |     2|
+|7     |      \SER[1].u_serializer  |serializer_10_to_1_1 |     2|
+|8     |      \SER[2].u_serializer  |serializer_10_to_1_2 |     2|
+|9     |      \SER[3].u_serializer  |serializer_10_to_1_3 |     2|
+|10    |      u_dvi_tmds_b          |dvi_tmds_encoder     |   103|
+|11    |      u_dvi_tmds_g          |dvi_tmds_encoder_4   |   112|
+|12    |      u_dvi_tmds_r          |dvi_tmds_encoder_5   |   101|
+|13    |    u_video_driver          |video_driver         |    99|
+|14    |  u_eth                     |eth                  |  2506|
+|15    |    u_crc32_d8_rx           |crc32_d8             |    62|
+|16    |    u_crc32_d8_tx           |crc32_d8_0           |    69|
+|17    |    u_eth_ctrl              |eth_ctrl             |   161|
+|18    |    u_eth_rx                |eth_rx               |   948|
+|19    |    u_eth_tx                |eth_tx               |  1256|
+|20    |  u_rgmii_to_gmii           |rgmii_to_gmii        |    27|
+|21    |    u_rgmii_rx              |rgmii_rx             |    22|
+|22    |    u_rgmii_tx              |rgmii_tx             |     5|
+|23    |  u_udp_data                |udp_data             |    20|
++------+----------------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 994.848 ; gain = 589.461
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 994.848 ; gain = 180.344
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 994.848 ; gain = 589.461
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 214 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 994.848 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+357 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 994.848 ; gain = 589.461
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 994.848 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 20 19:09:59 2025...

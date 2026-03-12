@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="wrfifo_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1750331732">
+  <File Type="PA-TCL" Name="wrfifo.tcl"/>
+  <File Type="REPORTS-TCL" Name="wrfifo_reports.tcl"/>
+  <File Type="RDS-RDS" Name="wrfifo.vds"/>
+  <File Type="RDS-UTIL" Name="wrfifo_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="wrfifo_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="wrfifo.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/wrfifo">
+    <File Path="$PSRCDIR/sources_1/ip/wrfifo/wrfifo.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="wrfifo"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/wrfifo">
+    <File Path="$PSRCDIR/sources_1/ip/wrfifo/wrfifo.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="wrfifo"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
