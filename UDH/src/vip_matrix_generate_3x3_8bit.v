@@ -18,7 +18,6 @@ module  vip_matrix_generate_3x3_8bit
     output reg [7:0]  matrix_p11,
     output reg [7:0]  matrix_p12, 
     output reg [7:0]  matrix_p13,
-   
     output reg [7:0]  matrix_p21, 
     output reg [7:0]  matrix_p22, 
     output reg [7:0]  matrix_p23,

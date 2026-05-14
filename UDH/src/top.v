@@ -196,7 +196,7 @@ wire   wfifo_full;
     );
 
     //例化DVI接口驱动模块
-    dvi_top  u_dvi_top (
+    dvi_top_new  u_dvi_top (
         .dvi_clk            ( dvi_clk           ),
         .dvi_clk_5x         ( dvi_clk_5x        ),
         .rst_n              ( sys_rst_n         ),

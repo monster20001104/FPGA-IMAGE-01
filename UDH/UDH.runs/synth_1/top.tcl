@@ -17,61 +17,55 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7k325tffg900-2
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.cache/wt [current_project]
-set_property parent.project_path C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.cache/wt [current_project]
+set_property parent.project_path C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/crc32_d8.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/ddr3/ddr3_rw.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/ddr3/ddr3_top.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/dvi_tmds_encoder.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/dvi_top.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/dvi_transmitter.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth.tx.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth_ctrl.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/eth_rx.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/rgmii_rx.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/rgmii_to_gmii.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/eth/rgmii_tx.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/serializer_10_to_1.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/udp_data.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/dvi/video_driver.v
-  C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/top.v
+  C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/src/eth/crc32_d8.v
+  C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/src/ddr3/ddr3_rw.v
+  C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/src/ddr3/ddr3_top.v
+  C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/src/eth/eth.tx.v
+  C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/src/eth/eth.v
+  C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/src/eth/eth_ctrl.v
+  C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/src/eth/eth_rx.v
+  C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/src/eth/rgmii_rx.v
+  C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/src/eth/rgmii_to_gmii.v
+  C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/src/eth/rgmii_tx.v
+  C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/src/udp_data.v
+  C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/src/top.v
 }
-read_ip -quiet C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/rdfifo/rdfifo.xci
+set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/rdfifo/rdfifo.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/rdfifo/rdfifo_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/rdfifo/rdfifo_ooc.xdc]
 
-read_ip -quiet C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_ooc.xdc]
+read_ip -quiet C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0_ooc.xdc]
 
-read_ip -quiet C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/rdfifo/rdfifo.xci
-set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/rdfifo/rdfifo.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/rdfifo/rdfifo_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/rdfifo/rdfifo_ooc.xdc]
+read_ip -quiet C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
-read_ip -quiet C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/wrfifo/wrfifo.xci
-set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/wrfifo/wrfifo.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/wrfifo/wrfifo_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/wrfifo/wrfifo_ooc.xdc]
+read_ip -quiet C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/wrfifo/wrfifo.xci
+set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/wrfifo/wrfifo.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/wrfifo/wrfifo_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/wrfifo/wrfifo_ooc.xdc]
 
-read_ip -quiet C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc]
+read_ip -quiet C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.srcs/sources_1/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -81,8 +75,8 @@ set_property used_in_implementation false [get_files -all c:/Users/Hello/Desktop
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/udp-hdmi-constr.xdc
-set_property used_in_implementation false [get_files C:/Users/Hello/Desktop/FPGA/DL-UDH-K7/UDH/src/udp-hdmi-constr.xdc]
+read_xdc C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/src/udp-hdmi-constr.xdc
+set_property used_in_implementation false [get_files C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/src/udp-hdmi-constr.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

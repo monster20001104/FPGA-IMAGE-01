@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="rdfifo_synth_1" LaunchDir="C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.runs/rdfifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_generator_0_synth_1" LaunchDir="C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.runs/fifo_generator_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="clk_wiz_0_synth_1" LaunchDir="C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.runs/clk_wiz_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="wrfifo_synth_1" LaunchDir="C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.runs/wrfifo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mig_7series_0_synth_1" LaunchDir="C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.runs/mig_7series_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/Hello/Desktop/FPGA项目/FPGA-IMAGE-01/UDH/UDH.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="rdfifo_synth_1"/>
+		<Parent Id="fifo_generator_0_synth_1"/>
+		<Parent Id="clk_wiz_0_synth_1"/>
+		<Parent Id="wrfifo_synth_1"/>
+		<Parent Id="mig_7series_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
